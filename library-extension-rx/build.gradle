@@ -32,3 +32,4 @@ dependencies {
 }
 
 group='com.github.instacart'
+version = rootProject.ext.versionName

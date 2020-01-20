@@ -117,6 +117,11 @@ public class TrueTime {
         return INSTANCE;
     }
 
+    public synchronized TrueTime withLoggingSink(ITrueLog trueLog) {
+        TrueLog.setLogSink(trueLog);
+        return INSTANCE;
+    }
+
     // -----------------------------------------------------------------------------------
 
     protected void initialize(String ntpHost) throws IOException {

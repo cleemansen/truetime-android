@@ -73,6 +73,11 @@ public class TrueTimeRx
         return this;
     }
 
+    public TrueTimeRx withLoggingSink(ITrueLog logSink) {
+        super.withLoggingSink(logSink);
+        return this;
+    }
+
     public TrueTimeRx withRetryCount(int retryCount) {
         _retryCount = retryCount;
         return this;
